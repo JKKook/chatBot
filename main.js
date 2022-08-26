@@ -64,7 +64,7 @@ function addToChat(input, finalResult) {
   let userDiv = document.createElement("div");
   userDiv.id = "user";
   userDiv.className = "response";
-  userDiv.innerHTML = `<span>${input}</span><img src="/img/user-solid.svg" alt="Robot cartoon" height="20px" width="20px">`;
+  userDiv.innerHTML = `<span>${input}</span><img src="./img/user-solid.svg" alt="Robot cartoon" height="20px" width="20px">`;
   messagesContainer.appendChild(userDiv);
 
   // bot에 관한 요소(div, img, span)을 만들고 추가!
@@ -72,7 +72,7 @@ function addToChat(input, finalResult) {
   let botImg = document.createElement("img");
   let botText = document.createElement("span");
   botDiv.id = "bot";
-  botImg.src = "/img/logo.png";
+  botImg.src = "./img/logo.png";
   botImg.className = "avatar";
   botDiv.className = "bot response";
   botText.innerText = "Typing...";

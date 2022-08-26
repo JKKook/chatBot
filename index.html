@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>chatBot</title>
+    <link rel="stylesheet" href="/chat.css" />
+    <script
+      src="https://kit.fontawesome.com/ddf76d6ed0.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header class="header">
+      <i class="fa-solid fa-comment-dots"></i>
+      Hello, Nice to meet You! <br />
+      whatever you want, Write & Enter!
+      <i class="fa fa-spinner fa-pulse fa-fw"></i>
+    </header>
+    <div class="header-con">
+      <img class="robot" src="/img/logo.png" alt="robot" />
+      <h1>Chatbot</h1>
+    </div>
+    <div id="container" class="container">
+      <div class="bg-chat">
+        <div id="chat" class="chat">
+          <div id="messages" class="messages"></div>
+          <input
+            id="input"
+            type="text"
+            placeholder="whatever you want, write & Enter!"
+            autocomplete="off"
+          />
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="/chat.js"></script>
+  <script src="/chatResponse.js"></script>
+</html>

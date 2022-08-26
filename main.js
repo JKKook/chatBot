@@ -9,7 +9,7 @@ const messagesContainer = document.getElementById("messages");
 document.addEventListener("DOMContentLoaded", () => {
   inputValue.addEventListener("keydown", (e) => {
     //   keyCode보다는 key, code를 사용한 것을 선호! (값이 다름!!!)
-    if (e.code === "Enter") {
+    if (e.code === "Enter" || e.keyCode === 13 || e.key === 13) {
       let input = inputValue.value;
       inputValue.value = "";
       output(input);
